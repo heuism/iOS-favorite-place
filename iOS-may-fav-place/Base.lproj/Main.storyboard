@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_may_fav_place" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,290 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mel1" translatesAutoresizingMaskIntoConstraints="NO" id="XvY-6o-1Z0"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qOc-3J-RCp">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sW7-h7-WbN">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melbourne" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcZ-C6-pqL">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="348" id="2Wu-9Y-rwT"/>
+                                                    <constraint firstAttribute="height" constant="57" id="MIX-kc-PLx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="60"/>
+                                                <color key="textColor" red="0.98819944370000001" green="0.98819944370000001" blue="0.98819944370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="shb-e3-t0S">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="ZAx-Ue-sYd">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="mep-dU-ZQd"/>
+                                                    <constraint firstAttribute="height" constant="30" id="zE8-9n-pN3"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victoria, Australia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHY-B0-zuE">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.98819944370000001" green="0.98819944370000001" blue="0.98819944370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nrS-dH-bcB" userLabel="Button StackView">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hky-41-08K" customClass="OrangeRoundedBtn" customModule="iOS_may_fav_place" customModuleProvider="target">
+                                        <color key="backgroundColor" red="1" green="0.43319611959999998" blue="0.13450120839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="KpW-Gm-ZRu"/>
+                                            <constraint firstAttribute="width" constant="141" id="b2d-eO-xuK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="About Melbourne">
+                                            <color key="titleColor" red="0.98819944370000001" green="0.98819944370000001" blue="0.98819944370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="f5A-9R-WD7" kind="show" id="DcM-Nk-7Zx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFe-kl-RvN" customClass="OrangeRoundedBtn" customModule="iOS_may_fav_place" customModuleProvider="target">
+                                        <color key="backgroundColor" red="1" green="0.43319611959999998" blue="0.13450120839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="WgA-zq-NNr"/>
+                                            <constraint firstAttribute="width" constant="141" id="ZeM-ce-STR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Photos">
+                                            <color key="titleColor" red="0.98819944370000001" green="0.98819944370000001" blue="0.98819944370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Lhz-09-fE8" kind="show" id="zpU-Yi-1Y6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nrS-dH-bcB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6nb-IY-y11"/>
+                            <constraint firstItem="XvY-6o-1Z0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Auj-DS-a59"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nrS-dH-bcB" secondAttribute="bottom" constant="80" id="ZfS-fG-3iB"/>
+                            <constraint firstItem="qOc-3J-RCp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="hBr-If-Y6Y"/>
+                            <constraint firstItem="qOc-3J-RCp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="hJo-fb-JUh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XvY-6o-1Z0" secondAttribute="bottom" id="k5x-7Z-W9R"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutThisPlaceBtn" destination="Hky-41-08K" id="EPB-tM-yr2"/>
+                        <outlet property="photosBtn" destination="nFe-kl-RvN" id="uPh-uK-CVC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--About This PlaceVC-->
+        <scene sceneID="hVQ-2p-dIl">
+            <objects>
+                <viewController id="f5A-9R-WD7" customClass="AboutThisPlaceVC" customModule="iOS_may_fav_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZBo-xp-ezM"/>
+                        <viewControllerLayoutGuide type="bottom" id="MEb-XE-hM8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bia-Yg-TVA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mel2" translatesAutoresizingMaskIntoConstraints="NO" id="rxr-te-7at">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="Dxz-xF-24e"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwO-IW-pCK" customClass="OrangeRoundedBtn" customModule="iOS_may_fav_place" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="CSh-K6-VBX"/>
+                                    <constraint firstAttribute="height" constant="16" id="ult-2M-OG8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.98819944370000001" green="0.98819944370000001" blue="0.98819944370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="f5A-9R-WD7" eventType="touchUpInside" id="pkX-xI-xie"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3dP-Oe-Zzh">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lw2-nl-7cD">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftg-Rg-oCU">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="Y6u-z2-0Dp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.7831315445" green="0.76998705069999995" blue="0.78169562719999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,087 milion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-Xl-hiX">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="BzF-Nv-chA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.7831315445" green="0.76998705069999995" blue="0.78169562719999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-3u-ptE">
+                                        <frame key="frameInset" minY="64" width="343" height="227"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSS-Jk-o1M">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="GLW-1u-Js1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.7831315445" green="0.76998705069999995" blue="0.78169562719999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="500" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0m-Za-7Jm">
+                                                <frame key="frameInset" minY="26" width="343" height="201"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="201" id="cxt-qx-mGx"/>
+                                                </constraints>
+                                                <string key="text">DID YOU KNOW
+The Exhibition Building was built in 1879 . The dome was higher than St Paul's Cathedral in London. The first international exhibition was held in 1880. The population of Melbourne reaches half a million. 1901 - 1927, While Canberra was being built Melbourne was the capital of Australia. The federal parliament met in the Victorian Parliament House. The Victorian Parliament moved to the Exhibition Buildings.
+</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.7831315445" green="0.76998705069999995" blue="0.78169562719999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Z0m-Za-7Jm" firstAttribute="top" secondItem="GSS-Jk-o1M" secondAttribute="bottom" constant="8" id="WTL-kW-CWX"/>
+                                            <constraint firstItem="Z0m-Za-7Jm" firstAttribute="leading" secondItem="3L3-3u-ptE" secondAttribute="leading" id="py1-SM-Dj7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Z0m-Za-7Jm" secondAttribute="bottom" id="q3N-Qk-a8N"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z0m-Za-7Jm" secondAttribute="trailing" id="ybT-Zr-7Ew"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b0i-oP-p4g">
+                                        <frame key="frameInset" minY="311" width="343" height="186"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things to do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPN-1y-EJr">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="P3M-C8-IY8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.7831315445" green="0.76998705069999995" blue="0.78169562719999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epm-X5-he3">
+                                                <frame key="frameInset" minY="26" width="343" height="160"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="184.5" id="MVQ-Pz-H9s"/>
+                                                </constraints>
+                                                <string key="text">1. Melbourne Cricket Ground (MCG)
+2. Royal Botanic Gardens Melbourne
+3. Shrine of Remembrance
+4. Wine Tours &amp; Tastings
+5. City Circle Tram
+6. National Gallery of Victoria
+7. Walking Tours
+8. Block Arcade
+9. Port Campbell National Park
+10. Sightseeing Tours</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.7831315445" green="0.76998705069999995" blue="0.78169562719999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3L3-3u-ptE" secondAttribute="trailing" id="8Lz-NY-Pgc"/>
+                                    <constraint firstItem="3L3-3u-ptE" firstAttribute="leading" secondItem="3dP-Oe-Zzh" secondAttribute="leading" id="RuP-zA-U44"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rxr-te-7at" secondAttribute="trailing" id="2Hp-9y-Re7"/>
+                            <constraint firstItem="XwO-IW-pCK" firstAttribute="leading" secondItem="Bia-Yg-TVA" secondAttribute="leadingMargin" id="9eV-oK-uTa"/>
+                            <constraint firstItem="3dP-Oe-Zzh" firstAttribute="top" secondItem="rxr-te-7at" secondAttribute="bottom" constant="8" id="DEp-IT-Otj"/>
+                            <constraint firstItem="MEb-XE-hM8" firstAttribute="top" secondItem="3dP-Oe-Zzh" secondAttribute="bottom" constant="16" id="QOb-nZ-1RY"/>
+                            <constraint firstAttribute="trailing" secondItem="3dP-Oe-Zzh" secondAttribute="trailing" constant="16" id="R51-7z-VuE"/>
+                            <constraint firstItem="3dP-Oe-Zzh" firstAttribute="leading" secondItem="Bia-Yg-TVA" secondAttribute="leading" constant="16" id="Ydh-Bs-RUP"/>
+                            <constraint firstItem="rxr-te-7at" firstAttribute="leading" secondItem="Bia-Yg-TVA" secondAttribute="leading" id="aPz-i2-YkR"/>
+                            <constraint firstItem="XwO-IW-pCK" firstAttribute="top" secondItem="ZBo-xp-ezM" secondAttribute="bottom" id="abX-pN-1EO"/>
+                            <constraint firstItem="rxr-te-7at" firstAttribute="top" secondItem="Bia-Yg-TVA" secondAttribute="top" id="hcD-Mu-Bd6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lz5-Vs-Tga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="-84.107946026986511"/>
+        </scene>
+        <!--PhotosVC-->
+        <scene sceneID="rpO-GZ-zTB">
+            <objects>
+                <viewController id="Lhz-09-fE8" customClass="PhotosVC" customModule="iOS_may_fav_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6UB-SL-Gex"/>
+                        <viewControllerLayoutGuide type="bottom" id="ywS-QE-xqN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cyb-iq-9Dw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zu1-bm-dtg">
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mel3" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-uR-87G"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mel4" translatesAutoresizingMaskIntoConstraints="NO" id="4Ma-xf-3jX"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mel5" translatesAutoresizingMaskIntoConstraints="NO" id="SaB-tb-vAS"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mel6" translatesAutoresizingMaskIntoConstraints="NO" id="jjp-bC-xVp"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mel7" translatesAutoresizingMaskIntoConstraints="NO" id="acR-KF-e08"/>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df2-SG-sdL" customClass="OrangeRoundedBtn" customModule="iOS_may_fav_place" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="DZr-I3-PTE"/>
+                                    <constraint firstAttribute="height" constant="17" id="ap2-ob-KZM"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.98819944370000001" green="0.98819944370000001" blue="0.98819944370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="Lhz-09-fE8" eventType="touchUpInside" id="mT3-B0-UI2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Df2-SG-sdL" firstAttribute="leading" secondItem="cyb-iq-9Dw" secondAttribute="leadingMargin" id="2Dc-Mf-999"/>
+                            <constraint firstItem="Zu1-bm-dtg" firstAttribute="top" secondItem="cyb-iq-9Dw" secondAttribute="top" id="7BL-NI-yyb"/>
+                            <constraint firstAttribute="bottom" secondItem="Zu1-bm-dtg" secondAttribute="bottom" id="97J-3q-gTa"/>
+                            <constraint firstItem="Zu1-bm-dtg" firstAttribute="leading" secondItem="cyb-iq-9Dw" secondAttribute="leading" id="nNo-QB-r1A"/>
+                            <constraint firstAttribute="trailing" secondItem="Zu1-bm-dtg" secondAttribute="trailing" id="rGg-aS-4oU"/>
+                            <constraint firstItem="Df2-SG-sdL" firstAttribute="top" secondItem="6UB-SL-Gex" secondAttribute="bottom" id="ukV-1R-zCP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuv-XB-xlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="667.91604197901052"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="compass" width="35" height="35"/>
+        <image name="mel1" width="1600" height="875"/>
+        <image name="mel2" width="2560" height="1600"/>
+        <image name="mel3" width="689" height="435"/>
+        <image name="mel4" width="4288" height="2848"/>
+        <image name="mel5" width="800" height="359"/>
+        <image name="mel6" width="5312" height="2988"/>
+        <image name="mel7" width="819" height="283"/>
+    </resources>
 </document>

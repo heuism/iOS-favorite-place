@@ -12,6 +12,9 @@
 		EB37AA991D3C73BB00559660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB37AA971D3C73BB00559660 /* Main.storyboard */; };
 		EB37AA9B1D3C73BB00559660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB37AA9A1D3C73BB00559660 /* Assets.xcassets */; };
 		EB37AA9E1D3C73BB00559660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB37AA9C1D3C73BB00559660 /* LaunchScreen.storyboard */; };
+		EB37AAAB1D3CF20700559660 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB37AAAA1D3CF20700559660 /* PhotosVC.swift */; };
+		EB37AAAD1D3CF9CB00559660 /* AboutThisPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB37AAAC1D3CF9CB00559660 /* AboutThisPlaceVC.swift */; };
+		EB37AAAF1D3D012A00559660 /* OrangeRoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB37AAAE1D3D012A00559660 /* OrangeRoundedBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EB37AA9A1D3C73BB00559660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB37AA9D1D3C73BB00559660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB37AA9F1D3C73BB00559660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB37AAAA1D3CF20700559660 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		EB37AAAC1D3CF9CB00559660 /* AboutThisPlaceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutThisPlaceVC.swift; sourceTree = "<group>"; };
+		EB37AAAE1D3D012A00559660 /* OrangeRoundedBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeRoundedBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		EB37AA921D3C73BB00559660 /* iOS-may-fav-place */ = {
 			isa = PBXGroup;
 			children = (
+				EB37AAA71D3CF19800559660 /* Controller */,
+				EB37AAA61D3CF19200559660 /* View */,
+				EB37AAA51D3CF18B00559660 /* Model */,
 				EB37AA931D3C73BB00559660 /* AppDelegate.swift */,
-				EB37AA951D3C73BB00559660 /* ViewController.swift */,
 				EB37AA971D3C73BB00559660 /* Main.storyboard */,
 				EB37AA9A1D3C73BB00559660 /* Assets.xcassets */,
 				EB37AA9C1D3C73BB00559660 /* LaunchScreen.storyboard */,
 				EB37AA9F1D3C73BB00559660 /* Info.plist */,
 			);
 			path = "iOS-may-fav-place";
+			sourceTree = "<group>";
+		};
+		EB37AAA51D3CF18B00559660 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EB37AAA61D3CF19200559660 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB37AAAE1D3D012A00559660 /* OrangeRoundedBtn.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EB37AAA71D3CF19800559660 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB37AA951D3C73BB00559660 /* ViewController.swift */,
+				EB37AAAA1D3CF20700559660 /* PhotosVC.swift */,
+				EB37AAAC1D3CF9CB00559660 /* AboutThisPlaceVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,8 +129,8 @@
 				TargetAttributes = {
 					EB37AA8F1D3C73BB00559660 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = MXE9N2LLEZ;
-						DevelopmentTeamName = "Hien Tran (Personal Team)";
+						DevelopmentTeam = 87JWH463A4;
+						DevelopmentTeamName = "Hien Junior (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,6 +173,9 @@
 			files = (
 				EB37AA961D3C73BB00559660 /* ViewController.swift in Sources */,
 				EB37AA941D3C73BB00559660 /* AppDelegate.swift in Sources */,
+				EB37AAAF1D3D012A00559660 /* OrangeRoundedBtn.swift in Sources */,
+				EB37AAAD1D3CF9CB00559660 /* AboutThisPlaceVC.swift in Sources */,
+				EB37AAAB1D3CF20700559660 /* PhotosVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-may-fav-place/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hientran.iOS-may-fav-place";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-may-fav-place/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hientran.iOS-may-fav-place";
 				PRODUCT_NAME = "$(TARGET_NAME)";
